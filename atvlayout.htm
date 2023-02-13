@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Layout</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        body{
+            margin: 0;
+            background-color: rgb(17, 17, 83);
+            font-family: 'Open Sans', sans-serif;
+        }
+        /* asterísco = todos os elementos */
+        *{
+            box-sizing: border-box;
+        }
+        /* Limpar o float: left (quebra linha) */
+        .clear{
+            clear: both;
+        }
+        .container{
+            width: 80%;
+            max-width: 800px;
+            background-color: white;
+            margin: auto;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .cabecalho{
+            float: left;
+        }
+        .menu{
+            margin-top: 0;
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            float: left;
+            background-color: rgb(17, 17, 83);
+        }
+        .menu li a{
+            background-color: rgb(17, 17, 83);
+            display: block;
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            float: left;
+        }
+        .menu li a:hover{
+            background-color: brown;
+            transition: 0.2s;
+        }
+        .lateral{
+            float: left;
+            text-align: center;
+            max-width: 30%;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .conteudo{
+            max-width: 70%;
+            float: left;
+            padding: 20px;
+        }
+        .rodape{
+            float: left;
+            background-color: rgb(17, 17, 83);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+        img:hover{
+            width: 150px;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Sobre Messi</h1>
+        </div>
+        <div class="clear"></div>
+
+        <div>
+            <ul class="menu">
+                <li><a href="#">Carreira</a></li>
+                <li><a href="#">Títulos</a></li>
+                <li><a href="#">Prêmios</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+        <div class="lateral">
+            <!-- Imagem clicável -->
+            <a href="img/messi.jpg" target="_blank"><img src="img/messi.jpg" alt="Lionel Messi" width="100px"></a>
+
+            <p>Lionel Andrés Messi Cuccittini é um futebolista 
+                argentino que atua como atacante. Atualmente joga pelo 
+                Paris Saint-Germain e pela Seleção Argentina, onde, atuando
+                como capitão, venceu a Copa do Mundo do Catar de 2022.</p>
+
+        </div>
+
+        <div class="conteudo">
+            <h1>Biografia</h1>
+            Durante os 21 anos que jogou no Barcelona, Messi 
+            tornou-se o maior artilheiro da história do clube, 
+            com 672 gols em 778 jogos. Foi o jogador que mais
+            marcou gols em uma única temporada: 91 gols em 2012.<br>
+
+            Messi foi o jogador que mais conquistou títulos com 
+            o clube catalão, 34 no total, incluindo quatro ligas 
+            dos campeões (2006,2009, 2011 e 2015) e dez campeonatos 
+            espanhóis. Desde 2021 joga no Paris Saint-Germain (PSG).<br>
+
+            Lionel Andrés Messi nasceu em Rosário, Argentina, no dia 24
+            de junho de 1987. Desde a infância mostrou interesse pelo 
+            futebol. Jogou em um pequeno clube chamado Abanderado Grandoli, 
+            localizado perto de sua casa.
+        </div>
+        <div class="clear"></div>
+
+        <div class="rodape">
+            <p>&copy; SENAC - Pindamonhangaba</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
